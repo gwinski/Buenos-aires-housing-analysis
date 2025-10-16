@@ -16,10 +16,10 @@ This project explores real estate pricing trends in Buenos Aires, Argentina, wit
 ## 🧠 Step-by-Step Process
 
 ### 1. **Data Collection**
-Five CSV files containing apartment listings were sourced and stored in the `data/raw/` directory. Each file includes details such as price, location, surface area, and property type.
+Five CSV files containing apartment listings were sourced and stored in the `data/` directory. Each file includes details such as price, location, surface area, and property type.
 
 ### 2. **Data Wrangling**
-Using a custom `wrangle()` function (located in `src/wrangle.py`), we:
+Using a custom `wrangle()` function, we:
 - Filtered listings to include only apartments in *Capital Federal* priced below $400,000 USD
 - Removed outliers in surface area using the 10th and 90th percentiles
 - Extracted latitude and longitude from the `lat-lon` column
